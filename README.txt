@@ -20,3 +20,17 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6    1 * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 */5 * * * * root  /root/backup.sh
 #
+
+root@JBE10001059:~# df -H
+Filesystem      Size  Used Avail Use% Mounted on
+udev             11M     0   11M   0% /dev
+tmpfs           104M   13M   91M  13% /run
+/dev/mmcblk1p2  1.8G  1.6G  108M  94% /
+tmpfs           259M     0  259M   0% /dev/shm
+tmpfs           5.3M  4.1k  5.3M   1% /run/lock
+tmpfs           259M     0  259M   0% /sys/fs/cgroup
+tmpfs           259M  320k  258M   1% /tmp
+/dev/mmcblk1p4  129M  1.7M  118M   2% /data
+/dev/mmcblk0     16G  369M   15G   3% /media/sdcard
+
+Move logfile to /tmp folder.
