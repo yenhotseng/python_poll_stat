@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# remove the previous test logs -- stat_data.txt and log_for_health_check.txt
 if [ -a stat_data.txt ]
 then rm stat_data.txt
   echo removed old log file
