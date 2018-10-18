@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -a stat_data.txt ]
+if [ -a /tmp/stat_data.txt ]
 then rm /tmp/stat_data.txt
   echo removed old log file
 fi
