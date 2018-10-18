@@ -34,3 +34,13 @@ tmpfs           259M  320k  258M   1% /tmp
 /dev/mmcblk0     16G  369M   15G   3% /media/sdcard
 
 Move logfile to /tmp folder.
+
+
+* Deploy 
+Use the below command to run and measure the execution time --
+# time source backup.sh
+
+The execution time must be shorter than 5 minutes or the test will be failed.
+--> Low the backup.sh sampling freq to 45000 for JBE10001306 target.
+
+Then add the script to /etc/crontab as the above setting.
