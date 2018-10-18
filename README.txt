@@ -44,3 +44,16 @@ The execution time must be shorter than 5 minutes or the test will be failed.
 --> Low the backup.sh sampling freq to 3000 for JBE10001306 target.
 
 Then add the script to /etc/crontab as the above setting.
+
+...
+
+root@JBE10001306:~# time source backup.sh
+
+removed old log file
+sampling......
+done.....
+
+real    4m0.357s
+user    0m12.508s
+sys     0m30.040s
+root@JBE10001306:~#
