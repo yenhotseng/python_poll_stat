@@ -57,3 +57,8 @@ real    4m0.357s
 user    0m12.508s
 sys     0m30.040s
 root@JBE10001306:~#
+
+
+* HTOP
+Add perf monitoring in https://github.com/yenhotseng/python_poll_stat/blob/master/htop_ej_bud.png.
+backup.sh occupied 4~5% CPU usage in EJ Gallo BUD.
