@@ -23,6 +23,7 @@ cp_filename = '/media/sdcard/update_date' + date_str + '.txt'
 # print cp_filename
 
 cp_cmd = 'cp /tmp/log_for_health_check.txt ' + cp_filename
+cp_cmd1 = 'uptime >> ' + cp_filename
 # print cp_cmd
 # cp_filename = "update_%{time.strftime("%Y-%m-%d_%H_%M_%S", time.localtime())}.txt"
 #print time.strftime("%Y-%m-%d_%H_%M_%S", time.localtime())
@@ -32,6 +33,7 @@ cp_cmd = 'cp /tmp/log_for_health_check.txt ' + cp_filename
 if max_val == 2:
   if max_val > min_val:
     call(cp_cmd, shell=True)
+    call(cp_cmd1, shell=True)
   else:
     call("rm /tmp/log_for_health_check.txt", shell=True)
 else:
