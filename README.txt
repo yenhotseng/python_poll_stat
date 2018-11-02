@@ -1,5 +1,13 @@
 README
 
+├── backup.sh   // Refine loop code to c code read_f
+├── check_n_backup.py
+├── htop_ej_bud.png
+├── main.c  // real read_f code source
+├── Makefile    // Makfile for read_f
+├── read_fproc.c    // old test version of main.c
+└── README.txt
+
 * Enable crontab as the below command for every 5 minutes check
 
 cat /etc/crontab
