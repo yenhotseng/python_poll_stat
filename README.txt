@@ -8,7 +8,13 @@ README
 ├── read_fproc.c    // old test version of main.c
 └── README.txt
 
-* Enable crontab as the below command for every 5 minutes check
+1. Steps for running the monitor script
+ a. Run "make" for read_f in the target board and put in /root folder.
+ b. Update crontab in the below.
+ c. Check /media/sdcard/*.txt for the failure logs
+
+
+2. Enable crontab as the below command for every 5 minutes check
 
 cat /etc/crontab
 # /etc/crontab: system-wide crontab
@@ -44,7 +50,7 @@ tmpfs           259M  320k  258M   1% /tmp
 Move logfile to /tmp folder.
 
 
-* Deploy 
+3. Deploy 
 Use the below command to run and measure the execution time --
 # time source backup.sh
 
@@ -67,6 +73,6 @@ sys     0m30.040s
 root@JBE10001306:~#
 
 
-* HTOP
+4. Check from "htop" 
 Add perf monitoring in https://github.com/yenhotseng/python_poll_stat/blob/master/htop_ej_bud.png.
 backup.sh occupied 4~5% CPU usage in EJ Gallo BUD.
